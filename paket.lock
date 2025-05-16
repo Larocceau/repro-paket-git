@@ -1,42 +1,7 @@
 STORAGE: NONE
-NUGET
-  remote: https://api.nuget.org/v3/index.json
-    Farmer (1.9.13)
-      FSharp.Core (>= 5.0) - restriction: >= netstandard2.0
-      System.Text.Json (>= 5.0) - restriction: >= netstandard2.0
-    FSharp.Core (9.0.300) - restriction: >= netstandard2.0
-    Microsoft.Bcl.AsyncInterfaces (9.0.5) - restriction: || (&& (>= net462) (>= netstandard2.0)) (&& (< net8.0) (>= netstandard2.0))
-      System.Threading.Tasks.Extensions (>= 4.5.4) - restriction: || (>= net462) (&& (>= netstandard2.0) (< netstandard2.1))
-    System.Buffers (4.6.1) - restriction: || (&& (>= net462) (>= netstandard2.0)) (&& (< net8.0) (>= netstandard2.0)) (&& (< netcoreapp2.1) (>= netstandard2.0) (< netstandard2.1))
-    System.IO.Pipelines (9.0.5) - restriction: || (&& (>= net462) (>= netstandard2.0)) (&& (>= net8.0) (< net9.0)) (&& (< net8.0) (>= netstandard2.0))
-      System.Buffers (>= 4.5.1) - restriction: || (>= net462) (&& (< net8.0) (>= netstandard2.0))
-      System.Memory (>= 4.5.5) - restriction: || (>= net462) (&& (< net8.0) (>= netstandard2.0))
-      System.Threading.Tasks.Extensions (>= 4.5.4) - restriction: || (>= net462) (&& (< net8.0) (>= netstandard2.0))
-    System.Memory (4.6.3) - restriction: || (&& (>= net462) (>= netstandard2.0)) (&& (< net8.0) (>= netstandard2.0))
-      System.Buffers (>= 4.6.1) - restriction: || (>= net462) (&& (< netcoreapp2.1) (>= netstandard2.0) (< netstandard2.1))
-      System.Numerics.Vectors (>= 4.6.1) - restriction: || (>= net462) (&& (< netcoreapp2.1) (>= netstandard2.0) (< netstandard2.1))
-      System.Runtime.CompilerServices.Unsafe (>= 6.1.2) - restriction: || (>= net462) (&& (< netcoreapp2.1) (>= netstandard2.0) (< netstandard2.1))
-    System.Numerics.Vectors (4.6.1) - restriction: || (&& (>= net462) (>= netstandard2.0)) (&& (< netcoreapp2.1) (>= netstandard2.0) (< netstandard2.1))
-    System.Runtime.CompilerServices.Unsafe (6.1.2) - restriction: || (&& (>= net462) (>= netstandard2.0)) (&& (< net8.0) (>= netstandard2.0)) (&& (< netcoreapp2.1) (>= netstandard2.0) (< netstandard2.1))
-    System.Text.Encodings.Web (9.0.5) - restriction: || (&& (>= net462) (>= netstandard2.0)) (&& (>= net8.0) (< net9.0)) (&& (< net8.0) (>= netstandard2.0))
-      System.Buffers (>= 4.5.1) - restriction: || (>= net462) (&& (< net8.0) (>= netstandard2.0))
-      System.Memory (>= 4.5.5) - restriction: || (>= net462) (&& (< net8.0) (>= netstandard2.0))
-      System.Runtime.CompilerServices.Unsafe (>= 6.0) - restriction: || (>= net462) (&& (< net8.0) (>= netstandard2.0))
-    System.Text.Json (9.0.5) - restriction: >= netstandard2.0
-      Microsoft.Bcl.AsyncInterfaces (>= 9.0.5) - restriction: || (>= net462) (&& (< net8.0) (>= netstandard2.0))
-      System.Buffers (>= 4.5.1) - restriction: || (>= net462) (&& (< net8.0) (>= netstandard2.0))
-      System.IO.Pipelines (>= 9.0.5) - restriction: || (>= net462) (&& (>= net8.0) (< net9.0)) (&& (< net8.0) (>= netstandard2.0))
-      System.Memory (>= 4.5.5) - restriction: || (>= net462) (&& (< net8.0) (>= netstandard2.0))
-      System.Runtime.CompilerServices.Unsafe (>= 6.0) - restriction: || (>= net462) (&& (< net8.0) (>= netstandard2.0))
-      System.Text.Encodings.Web (>= 9.0.5) - restriction: || (>= net462) (&& (>= net8.0) (< net9.0)) (&& (< net8.0) (>= netstandard2.0))
-      System.Threading.Tasks.Extensions (>= 4.5.4) - restriction: || (>= net462) (&& (< net8.0) (>= netstandard2.0))
-      System.ValueTuple (>= 4.5) - restriction: >= net462
-    System.Threading.Tasks.Extensions (4.6.3) - restriction: || (&& (>= net462) (>= netstandard2.0)) (&& (< net8.0) (>= netstandard2.0)) (&& (>= netstandard2.0) (< netstandard2.1))
-      System.Runtime.CompilerServices.Unsafe (>= 6.1.2) - restriction: || (>= net462) (&& (< netcoreapp2.1) (>= netstandard2.0) (< netstandard2.1))
-    System.ValueTuple (4.6.1) - restriction: && (>= net462) (>= netstandard2.0)
 GIT
   remote: https://github.com/CompositionalIT/farmer.git
      (55b56283624afd23a4cf3fa8438f42e5a9842e18)
-      build: dotnet pack
-      path: farmer\src\Farmer\bin\Debug
+      build: dotnet pack -c Release -o PackOutput
+      path: PackOutput
       os: windows

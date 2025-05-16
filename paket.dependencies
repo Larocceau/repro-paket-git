@@ -1,4 +1,4 @@
 source https://api.nuget.org/v3/index.json
 
 storage: none
-git https://github.com/CompositionalIT/farmer.git container-app-probes build: "dotnet pack", OS: windows, Packages:src\Farmer\bin\Debug
+git https://github.com/CompositionalIT/farmer.git container-app-probes build: "dotnet pack -c Release -o PackOutput", OS: windows, Packages: PackOutput
